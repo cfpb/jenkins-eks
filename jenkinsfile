@@ -1,0 +1,10 @@
+pipeline {
+    agent any
+
+    stage("install dependencies"){
+        steps{
+            sh 'apk add py3-pip'
+        }
+
+    }
+}
