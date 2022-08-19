@@ -1,10 +1,18 @@
+
 pipeline {
     agent any
 
-    stage("install dependencies"){
-        steps{
-            sh 'apk add py3-pip'
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello from github'
+            }
         }
-
+        
+        stage('Goodbye') {
+            steps {
+                echo 'Goodbye from github'
+            }
+        }
     }
 }
