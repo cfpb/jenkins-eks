@@ -19,7 +19,7 @@ pipeline {
             steps{
                 script{
                     modules.first = load "first.groovy"
-                    modules.second = laod "second.groovy"
+                    modules.second = load "second.groovy"
 
                     modules.second.init(modules.first)
                     modules.first.test1()
